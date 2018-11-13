@@ -1,8 +1,8 @@
 const AuthVariables = {
-    domain: 'mattapayne.auth0.com',
-    clientID: 'kHhcrNEozo0qRW0QlgKSyu223NR1RBNs',
-    redirectUri: 'http://localhost:8080/callback',
-    audience: 'https://dev.depender.io',
+    domain: process.env.VUE_APP_AUTH0_DOMAIN,
+    clientID: process.env.VUE_APP_AUTH0_CLIENT_ID,
+    redirectUri: process.env.VUE_APP_AUTH0_REDIRECT_URL,
+    audience: process.env.VUE_APP_AUTH0_AUDIENCE,
   };
 
 export {
